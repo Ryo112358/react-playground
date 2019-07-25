@@ -1,0 +1,24 @@
+.Pokedex {
+    text-align: center;
+}
+
+.Pokedex ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.Pokedex ul li {
+    display: inline-block;
+    border: 1px dashed black;
+    margin: 2% 5%;
+}
+
+.Pokedex-winner {
+    color: forestgreen;
+}
+
+.Pokedex-loser {
+    color: firebrick;
+}
