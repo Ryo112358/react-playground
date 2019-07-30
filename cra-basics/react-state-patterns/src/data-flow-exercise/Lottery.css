@@ -1,0 +1,15 @@
+.Lottery {
+  border: 2px solid seagreen;
+  border-radius: .75rem;
+  width: 36rem;
+  margin: 5px auto;
+}
+
+.Lottery-balls {
+  list-style-type: none;
+  padding: 0;
+}
+
+.Lottery-button {
+  margin: 5px 0;
+}

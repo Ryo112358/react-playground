@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+}
+
+.LotteryContainer {
+  border: 3px solid seagreen;
+  border-radius: .75rem;
+  width: 36rem;
+  padding: 0 .5rem;
+  margin: 0 auto;
+}

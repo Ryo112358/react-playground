@@ -1,0 +1,13 @@
+.MutateState {
+  border: 2px solid green;
+  margin: 2% auto;
+  width: 25%;
+}
+
+.MutateState-list {
+  border: 2px solid black;
+}
+
+.MutateState-list-element {
+  text-align: left;
+}
