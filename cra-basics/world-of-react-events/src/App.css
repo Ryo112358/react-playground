@@ -1,0 +1,7 @@
+.App {
+  text-align: center;
+}
+
+.App-hangman {
+  background-image: url('./hangman-exercise/bg-hangman.png');
+}
