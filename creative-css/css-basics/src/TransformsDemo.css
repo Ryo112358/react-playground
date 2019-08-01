@@ -1,0 +1,108 @@
+.TransformsDemo {
+  text-align: center;
+  /* Placing perspective in parent container is not working as expected...
+        REMEDY: perspective-origin (defaults to center of parent)*/
+}
+
+.Appa-translate {
+  display: block;
+  width: 300px;
+  margin: auto;
+  margin-top: 2rem;
+  transition: transform 2s;
+}
+
+.Appa-translate:hover {
+  transform: translateX(300px); /* Positive X -> right */
+  transform: translateY(100px);  /* Positive Y -> down */
+  /* Not that only the most recent transform is applied */
+  transform: translate(200px, 125px) /* translate(x, y) */ 
+}
+
+.Appa-translate:active {
+  transform: translateX(-300px)
+}
+
+.Momo-scale {
+  display: block;
+  width: 200px;
+  margin: 10rem auto;
+  transition: transform 2s;
+}
+
+.Momo-scale:hover {
+  transform: scaleX(0.75);  /* As with translate, overridden by subsequent transforms */
+  transform: scale(1.25);    /* scale(x, y), or single parameter to maintain aspect ratio */ 
+}
+
+.Momo-scale:active {
+  transform: scale(.75, 1.5);    /* scale(x, y), or single parameter to maintain aspect ratio */ 
+}
+
+.Aang-rotate {
+  display: block;
+  width: 400px;
+  margin: 10rem auto;
+  transition: transform 2s;
+}
+
+.Aang-rotate:hover {
+  transform: rotate(180deg);  /* Default clockwise rotation */
+  transform: rotate(-.75turn);
+  transform: rotate(400grad)  /* One full circle = 400 gradients */
+}
+
+.Aang-rotate:active {
+  transform: rotate(-720deg);
+}
+
+.Spirit-world-skew {
+  display: block;
+  width: 500px;
+  margin: 10rem auto;
+  transition: transform 2s;
+}
+
+.Spirit-world-skew:hover {
+  transform: skew(20deg, 10deg);  /* skew(x, y) */
+}
+
+.Spirit-world-skew:active {
+  transform: skew(-10deg, -20deg);  /* skew(x, y) */
+}
+
+.Kyoshi-origin {
+  display: block;
+  width: 360px;
+  margin: 10rem auto;
+  transition: transform 2s;
+  transform-origin: 50% 25%;
+}
+
+.Kyoshi-origin:hover {
+  transform: rotate(35deg)
+}
+
+.Kyoshi-origin:active {
+  transform: rotate(-35deg)
+}
+
+/* -------------------------------------- */
+.TransformsDemo-3d-container {
+  perspective: 500px;
+}
+
+.Appa-3d-translate {
+  display: block;
+  width: 500px;
+  margin: 10rem auto;
+  transition: transform 2s;
+}
+
+.Appa-3d-translate:hover {
+  transform: translateZ(100px);
+}
+
+.Appa-3d-translate:active {
+  transform: rotate3d(1, -1, 1, 30deg);
+}
