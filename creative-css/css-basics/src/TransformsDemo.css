@@ -68,7 +68,7 @@
 }
 
 .Spirit-world-skew:active {
-  transform: skew(-10deg, -20deg);  /* skew(x, y) */
+  transform: skew(-10deg, -20deg);
 }
 
 .Kyoshi-origin {

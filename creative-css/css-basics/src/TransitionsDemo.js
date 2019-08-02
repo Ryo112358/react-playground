@@ -17,7 +17,7 @@ class TransitionsDemo extends PureComponent {
     return (
       <div className="TransitionsDemo">
         <div className="TD-container-1">
-          <button className="TD-button-1">Button 1</button>
+          <button id="TD-button-1">Button 1</button>
           <button className="TD-button-2">Button 2</button>
           <button className="TD-button-3">Button 3</button>
         </div>

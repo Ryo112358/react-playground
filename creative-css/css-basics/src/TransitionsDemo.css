@@ -14,12 +14,13 @@
   background-color: blue;
 }
 
-.TD-button-1 {
+#TD-button-1 {
+  background-color: blueviolet;
   transition-property: background-color border-radius;
   transition-duration: 1.5s;
 }
 
-.TD-button-1:hover {
+#TD-button-1:hover {
   background-color: forestgreen;
   border-radius: 1rem;
 }

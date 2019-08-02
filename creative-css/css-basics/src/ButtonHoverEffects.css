@@ -1,0 +1,320 @@
+.BHE {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.BHE-button-block {
+  width: 25%;
+  height: 12rem;
+  text-align: center;
+}
+
+.BHE-button-style {
+  border: 3px solid #272727;
+  background-color: transparent;
+  font-family: sans-serif;
+  font-size: 2rem;
+  color: #272727;
+  padding: 1.5rem 3rem;
+  margin: 3rem auto;
+  position: relative; /* important */
+  z-index: 1;
+}
+
+.BHE-button-style::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;  /* Places element in background */
+}
+
+.BHE-button-style::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;  /* Places element in background */
+}
+
+/* ------------------ Button 1 ------------------ */
+
+#BHE-effect-1 {
+  overflow: hidden;
+}
+
+#BHE-effect-1::before {
+  width: 50%;
+  background-color: #fff200;
+  transform-origin: bottom left;
+  transform: rotate(-90deg);
+  transition: all 1s;
+}
+
+#BHE-effect-1:hover::before {
+  transform: rotate(0deg);
+}
+
+#BHE-effect-1::after {
+  top: auto;
+  left: auto;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  background-color: #fff200;
+  transform-origin: bottom right;
+  transform: rotate(-90deg);
+  transition: all 1s;
+}
+
+#BHE-effect-1:hover::after {
+  transform: rotate(0deg);
+}
+
+/* ------------------ Button 2 ------------------ */
+
+#BHE-effect-2 {
+  border-color: #351435;
+  transition: all 1s ease-in-out;
+  overflow: hidden;
+}
+
+#BHE-effect-2:hover {
+  color: whitesmoke;
+}
+
+#BHE-effect-2::before {
+  top: auto;
+  bottom: 0;
+  height: 50%;
+  background-color: #351435;
+  transform: translateY(100%);
+  transition: all 1s;
+}
+
+#BHE-effect-2:hover::before {
+  transform: translateY(0);
+}
+
+#BHE-effect-2::after {
+  height: 50%;
+  background-color: #351435;
+  transform: translateY(-100%);
+  transition: all 1s;
+}
+
+#BHE-effect-2:hover::after {
+  transform: translateY(0);
+}
+
+/* ------------------ Button 3 ------------------ */
+
+#BHE-effect-3 {
+  transition: all 1s;
+}
+
+#BHE-effect-3:hover {
+  color: whitesmoke;
+}
+
+#BHE-effect-3::before {
+  background-color: #262626;
+  transform: rotateX(90deg);
+  transition: 1s; /* default transition is 'all' */
+}
+
+#BHE-effect-3:hover::before {
+  transform: rotateX(0deg);
+}
+
+#BHE-effect-3::after {
+  background-color: #262626;
+  transform: rotateY(90deg);
+  transition: 1s;
+}
+
+#BHE-effect-3:hover::after {
+  transform: rotateY(0deg);
+}
+
+/* ------------------ Button 4 ------------------ */
+
+#BHE-effect-4 {
+  margin: 3.8rem auto;
+  padding: 1.2rem 2.4rem;
+  font-size: 1.2rem;
+  border: 1px solid #e1332d;
+  font-family: 'Roboto';
+  color: #e1332d;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: -1px;
+  transition: all .5s;
+}
+
+#BHE-effect-4:hover {
+  font-weight: 900;
+  letter-spacing: 2px;
+  border-width: 3px;
+}
+
+/* ------------------ Button 5 ------------------ */
+
+#BHE-effect-5 {
+  border-color: whitesmoke;
+  background-color: #222;
+  color: whitesmoke;
+  overflow: hidden;
+}
+
+#BHE-effect-5::before {
+  content: 'Skål!';
+  z-index: 0;
+  background-color: teal;
+  transform: translateY(-100%);
+  transition: all 1s ease-out;
+  display: flex;
+  align-items: center;  /* center vertically */
+  justify-content: center;  /* center horizontally */
+}
+
+#BHE-effect-5:hover::before {
+  transform: translateY(0);
+}
+
+/* ------------------ Button 6 ------------------ */
+
+#BHE-effect-6 {
+  background-color: #262626;
+  color: transparent;
+  overflow: hidden;
+}
+
+#BHE-effect-6::before {
+  content: 'Hover me!';
+  background-color: #faf213;
+  color: #262626;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 750ms;
+}
+
+#BHE-effect-6:hover::before {
+  transform: translate(100%, -100%);
+}
+
+#BHE-effect-6::after {
+  content: 'Hover me!';
+  background-color: #faf213;
+  color: #262626;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-100%, 100%);
+  transition: all 750ms;
+}
+
+#BHE-effect-6:hover::after {
+  transform: translate(0, 0);
+}
+
+/* ------------------ Button 7 ------------------ */
+
+#BHE-effect-7 {
+  border-color: whitesmoke;
+  background-color: #222;
+  color: whitesmoke;
+  transition: all 300ms;
+  overflow: hidden;
+}
+
+#BHE-effect-7:hover {
+  background-color: darkred;
+}
+
+#BHE-effect-7::before {
+  height: 3rem;
+  background-color: white;
+  transform: translateX(-100%) rotate(45deg);
+  transition: all 300ms;
+}
+
+#BHE-effect-7:hover::before {
+  transform: translateX(100%) rotate(45deg);
+}
+
+/* ------------------ Button 8 ------------------ */
+
+#BHE-effect-8 {
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+#BHE-effect-8:hover {
+  color: transparent;
+}
+
+#BHE-effect-8::before {
+  content: 'Hover me!';
+  background-color: #262626;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(5);
+  opacity: 0;
+  transition: 500ms;
+}
+
+#BHE-effect-8:hover::before {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* ------------------ Button 9 ------------------ */
+
+/* #BHE-effect-# {
+
+}
+
+#BHE-effect-#:hover {
+
+} */
+
+/* ------------------ Button 10 ------------------ */
+
+/* #BHE-effect-# {
+
+}
+
+#BHE-effect-#:hover {
+
+} */
+
+/* ------------------ Button 11 ------------------ */
+
+/* #BHE-effect-# {
+
+}
+
+#BHE-effect-#:hover {
+
+} */
+
+/* ------------------ Button 12 ------------------ */
+
+/* #BHE-effect-# {
+
+}
+
+#BHE-effect-#:hover {
+
+} */
