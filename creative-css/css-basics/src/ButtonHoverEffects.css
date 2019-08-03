@@ -281,40 +281,215 @@
 
 /* ------------------ Button 9 ------------------ */
 
-/* #BHE-effect-# {
-
+#BHE-effect-9 {
+  color: #262626;
+  transition: 500ms;
 }
 
-#BHE-effect-#:hover {
+#BHE-effect-9:hover {
+  color: whitesmoke;
+}
 
-} */
+#BHE-effect-9 span {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: #262626;
+  top: 0;
+  z-index: -1;
+  transform: scaleY(0);
+  transition: 500ms;
+  transform-origin: top;
+}
+
+#BHE-effect-9:hover span {
+  transform: scaleY(1);
+}
+
+#BHE-effect-9 span:nth-child(1) {
+  left: 0;
+}
+
+#BHE-effect-9 span:nth-child(2) {
+  left: 25%;
+  transition-delay: 150ms;
+}
+
+#BHE-effect-9 span:nth-child(3) {
+  left: 50%;
+  transition-delay: 300ms;
+}
+
+#BHE-effect-9 span:nth-child(4) {
+  left: 75%;
+  transition-delay: 450ms;
+}
 
 /* ------------------ Button 10 ------------------ */
 
-/* #BHE-effect-# {
-
+#BHE-effect-10 {
+  color: #262626;
+  transition: 500ms;
 }
 
-#BHE-effect-#:hover {
+#BHE-effect-10:hover {
+  color: whitesmoke;
+}
 
-} */
+#BHE-effect-10 span {
+  position: absolute;
+  width: 100%;
+  height: 25%;
+  background-color: #262626;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform: scaleY(0);
+  transition: 500ms;
+  transform-origin: top;
+}
+
+#BHE-effect-10:hover span {
+  transform: scaleY(1);
+}
+
+#BHE-effect-10 span:nth-child(2) {
+  top: 25%;
+  transition-delay: 150ms;
+}
+
+#BHE-effect-10 span:nth-child(3) {
+  top: 50%;
+  transition-delay: 300ms;
+}
+
+#BHE-effect-10 span:nth-child(4) {
+  top: 75%;
+  transition-delay: 450ms;
+}
 
 /* ------------------ Button 11 ------------------ */
 
-/* #BHE-effect-# {
-
+#BHE-effect-11 {
+  color: #262626;
+  transition: 500ms;
 }
 
-#BHE-effect-#:hover {
+#BHE-effect-11:hover {
+  color: whitesmoke;
+}
 
-} */
+#BHE-effect-11 span {
+  position: absolute;
+  width: 100%;
+  height: 25%;
+  background-color: #262626;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform: scaleX(0);
+  transition: 500ms;
+  transform-origin: top;
+}
+
+#BHE-effect-11:hover span {
+  transform: scaleX(1);
+}
+
+#BHE-effect-11 span:nth-child(2) {
+  top: 25%;
+  transition-delay: 150ms;
+}
+
+#BHE-effect-11 span:nth-child(3) {
+  top: 50%;
+  transition-delay: 300ms;
+}
+
+#BHE-effect-11 span:nth-child(4) {
+  top: 75%;
+  transition-delay: 450ms;
+}
 
 /* ------------------ Button 12 ------------------ */
 
-/* #BHE-effect-# {
+#BHE-effect-12 {
+  color: #262626;
+  transition: 500ms;
+}
+
+#BHE-effect-12:hover {
+  color: whitesmoke;
+}
+
+#BHE-effect-12 span {
+  position: absolute;
+  width: 100%;
+  height: 25%;
+  background-color: #262626;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform: scaleX(0);
+  transition: 500ms;
+  transform-origin: left;
+}
+
+#BHE-effect-12:hover span {
+  transform: scaleX(1);
+}
+
+#BHE-effect-12 span:nth-child(2) {
+  top: 25%;
+  transition-delay: 150ms;
+}
+
+#BHE-effect-12 span:nth-child(3) {
+  top: 50%;
+  transition-delay: 300ms;
+}
+
+#BHE-effect-12 span:nth-child(4) {
+  top: 75%;
+  transition-delay: 450ms;
+}
+
+/* ------------------ Button 13 ------------------ */
+
+/* #BHE-effect-13 {
 
 }
 
-#BHE-effect-#:hover {
+#BHE-effect-13:hover {
+
+} */
+
+/* ------------------ Button 14 ------------------ */
+
+/* #BHE-effect-14 {
+
+}
+
+#BHE-effect-14:hover {
+
+} */
+
+/* ------------------ Button 15 ------------------ */
+
+/* #BHE-effect-15 {
+
+}
+
+#BHE-effect-15:hover {
+
+} */
+
+/* ------------------ Button 16 ------------------ */
+
+/* #BHE-effect-16 {
+
+}
+
+#BHE-effect-16:hover {
 
 } */
