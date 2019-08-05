@@ -75,13 +75,13 @@ class ButtonHoverEffects extends PureComponent {
         <div className="BHE-button-block">
           <button id="BHE-effect-13" className="BHE-button-style">Hover me!</button>
         </div>
-        <div className="BHE-button-block">
+        <div className="BHE-button-block" style={{ background: "#222"}}>
           <button id="BHE-effect-14" className="BHE-button-style">Hover me!</button>
         </div>
         <div className="BHE-button-block">
           <button id="BHE-effect-15" className="BHE-button-style">Hover me!</button>
         </div>
-        <div className="BHE-button-block">
+        <div className="BHE-button-block" style={{ background: "#222"}}>
           <button id="BHE-effect-16" className="BHE-button-style">Hover me!</button>
         </div>
       </div>
