@@ -1,0 +1,49 @@
+.SimpleMenu {
+  margin: 0 auto;
+  width: 75%;
+}
+
+.SimpleMenu-header {
+  font-family: 'Asap';
+  font-size: 2.5rem;
+  font-weight: normal;
+  color: whitesmoke;
+}
+
+.SimpleMenu-nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: #dcdde1;
+}
+
+.SimpleMenu-nav li a {
+  text-decoration: none;
+  color: #272727;
+  font-weight: 450;
+}
+
+.SimpleMenu-nav ul li {
+  padding: 0.75rem 1.2rem;
+  transition: 500ms;
+}
+
+.SimpleMenu-nav ul li:hover {
+  background-color: #f5f6fa;
+}
+
+@media screen and (min-width: 600px) {
+  .SimpleMenu-nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .SimpleMenu-nav ul li {
+    text-align: center;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+  }
+}

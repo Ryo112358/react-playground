@@ -1,0 +1,16 @@
+.IHE {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.IHE-img-container {
+  background-color: teal;
+  width: 48%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}

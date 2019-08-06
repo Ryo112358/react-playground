@@ -1,0 +1,70 @@
+.AdvancedMenu {
+  margin: 0 auto;
+  width: 75%;
+}
+
+.AdvancedMenu-header {
+  font-family: 'Asap';
+  font-size: 2.5rem;
+  font-weight: normal;
+  color: whitesmoke;
+}
+
+.AdvancedMenu-nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: #dcdde1;
+}
+
+.AdvancedMenu-nav ul li {
+  padding: 1.2rem 2rem;
+  transition: 500ms;
+}
+
+.AdvancedMenu-nav ul li:hover {
+  background-color: #f5f6fa;
+}
+
+.AdvancedMenu-nav a {
+  text-decoration: none;
+  color: #272727;
+  font-weight: 500;
+  display: flex;
+}
+
+.AdvancedMenu-icon {
+  flex-basis: 64px;
+  font-size: 3rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.AdvancedMenu-text {
+  font-family: 'Asap';
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.AdvancedMenu-subtitle {
+  display: block;
+  padding-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+@media screen and (min-width: 600px) {
+  .AdvancedMenu-nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .AdvancedMenu-nav ul li {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 220px;
+  }
+}

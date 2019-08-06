@@ -3,7 +3,6 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  flex: 1;
 }
 
 .BHE-button-block {
@@ -483,58 +482,57 @@
 /* ------------------ Button 14 ------------------ */
 
 #BHE-effect-14 {
-  border: 0;
-  background-color: #f1c40f;
-  color: whitesmoke;
   text-transform: uppercase;
   letter-spacing: 2px;
-  transition: 250ms;
-}
-
-#BHE-effect-14:hover {
   color: transparent;
+  border-color: #ff0;
 }
 
 #BHE-effect-14::before {
   content: "Hover me!";
-  background-color: #2ce771;
+  background-color: #363636;
+  color: #ff0;
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: rotateX(270deg);
-  transform-origin: top;
   transition: 500ms;
 }
 
-/* #BHE-effect-14:hover::before {
-  transform: rotateX(0deg);
-} */
+#BHE-effect-14:hover::before {
+  left: 100%;
+  transform: scale(0) rotateY(360deg);
+  opacity: 0;
+}
 
 #BHE-effect-14::after {
   content: "Hover me!";
-  background-color: darkred;
+  background-color: #363636;
+  color: #ff0;
+  left: -100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: rotateX(270deg);
-  transform-origin: top;
-  transition: 500ms 250ms;
+  transform: scale(0) rotateY(0deg);
+  opacity: 0;
+  transition: 500ms;
 }
-#BHE-effect-14:hover::before, #BHE-effect-14:hover::after {
-  transform: rotateX(0deg);
-  color: whitesmoke;
+
+#BHE-effect-14:hover::after {
+  left: 0;
+  transform: scale(1) rotateY(360deg);
+  opacity: 1;
 }
 
 /* ------------------ Button 15 ------------------ */
 
 #BHE-effect-15 {
   color: transparent;
-  transform: scale(0.5);
+  transform: scale(0.75);
   transition: transform 750ms;
 }
 
 #BHE-effect-15:hover {
-  transform: scale(0.8) rotate(-360deg);
+  transform: scale(1) rotate(-360deg);
 }
 
 #BHE-effect-15::before {
@@ -553,43 +551,44 @@
 /* ------------------ Button 16 ------------------ */
 
 #BHE-effect-16 {
+  border: 0;
+  background-color: #f1c40f;
+  color: whitesmoke;
   text-transform: uppercase;
   letter-spacing: 2px;
+  transition: 250ms;
+}
+
+#BHE-effect-16:hover {
   color: transparent;
-  border-color: #ff0;
 }
 
 #BHE-effect-16::before {
   content: "Hover me!";
-  background-color: #363636;
-  color: #ff0;
+  background-color: #2ce771;
   display: flex;
   align-items: center;
   justify-content: center;
+  transform: rotateX(270deg);
+  transform-origin: top;
   transition: 500ms;
 }
 
-#BHE-effect-16:hover::before {
-  left: 100%;
-  transform: scale(0) rotateY(360deg);
-  opacity: 0;
-}
+/* #BHE-effect-16:hover::before {
+  transform: rotateX(0deg);
+} */
 
 #BHE-effect-16::after {
   content: "Hover me!";
-  background-color: #363636;
-  color: #ff0;
-  left: -100%;
+  background-color: darkred;
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: scale(0) rotateY(0deg);
-  opacity: 0;
-  transition: 500ms;
+  transform: rotateX(270deg);
+  transform-origin: top;
+  transition: 500ms 250ms;
 }
-
-#BHE-effect-16:hover::after {
-  left: 0;
-  transform: scale(1) rotateY(360deg);
-  opacity: 1;
+#BHE-effect-16:hover::before, #BHE-effect-16:hover::after {
+  transform: rotateX(0deg);
+  color: whitesmoke;
 }
