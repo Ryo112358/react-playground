@@ -3,7 +3,7 @@
 }
 
 .App-hangman {
-  background-image: url('./hangman-exercise/bg-hangman.png');
+  background-image: url('./hangman/bg-hangman.png');
 }
 
 .App-lightsout {

@@ -7,8 +7,8 @@ function App() {
   return (
     <div className="App">
       {/* <NumberList /> */}
-      {false && <div className="App-hangman"><Hangman /></div>}
-      {true && <div className="App-lightsout"><LightsOut /></div>}
+      {true && <div className="App-hangman"><Hangman /></div>}
+      {false && <div className="App-lightsout"><LightsOut /></div>}
     </div>
   );
 }
